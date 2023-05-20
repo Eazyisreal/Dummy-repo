@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+@font-face {
+    font-family: onest; /* Choose a name for your font */
+    src: url(../fonts/onest.woff); /* Replace "path-to-your-font-file.ttf" with the actual path to your font file */
+  }
+  
+
+
+.hero{
+    background-image: url(../images/bg.png);
+    height:100vh;
+    max-width: 1440px;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    background-repeat: no-repeat ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h2{
+    font-family: onest;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+article{
+    margin: 20rem 2rem 4rem;
+    display: flex;
+}
+
+article p{
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.4rem;
+    line-height: 110%;
+    color: #FFFFFF;
+}
+
+article h2{
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.git{
+    margin: 18rem 2rem 4rem;
+}
+
+/* Tablets */
+@media screen  and (max-width:900px){
+    article p{
+        font-size: 6rem;
+    }
+
+    article h2{
+        font-size: 1rem;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .git{
+        margin: 7rem 0;
+    }
+
+    .arrow{
+        width: 30%;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width:475px) {
+
+    nav ul{
+        display: none;
+    }
+
+    article p{
+        font-size: 3.5rem;
+    }
+    
+
+    article{
+        margin: 17rem 1rem ;
+    }
+
+    
+    .arrow{
+        width: 40%;
+    }
+}
